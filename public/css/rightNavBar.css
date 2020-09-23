@@ -1,0 +1,54 @@
+.social-media-container {
+	position: fixed;
+	top: 60%;
+	right: calc(100% - 30px);
+	list-style-type: none;
+	padding: 0;
+	transform: translateY(-50%);
+	min-width: 300px;
+	z-index: 10;
+}
+
+.social-media {
+	align-items: center;
+	display: flex;
+	transition: transform .3s ease-in-out;
+	height:50px;
+	flex-direction: row-reverse;
+}
+
+.social-media i {
+	font-size:25px;
+}
+.social-media:hover {
+	transform: translateX(calc(100% - 33px));
+}
+
+.social-media.blog {
+	background-color: #fff;
+	box-shadow: 5px 5px 5px 5px rgba(158, 158, 158, 0.3);
+	z-index: 15;
+}
+
+.social-media.facebook {
+	background-color: #3b5998;
+}
+
+.social-media.twitter {
+	background-color: #00aced;
+}
+
+.social-media.github {
+	background-color: #333;
+}
+
+.social-media.linkedin {
+	background-color: #007bb6;
+}
+
+
+
+.social-media a {
+	color: #fff;
+	padding: 0 10px;
+}

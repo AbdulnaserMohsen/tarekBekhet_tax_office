@@ -1,0 +1,51 @@
+.read-more-state {
+  display: none;
+  position: relative;
+}
+
+.read-more-target {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+  transition: .25s ease;
+}
+
+.read-more-state:checked ~ .read-more-wrap .read-more-target {
+  opacity: 1;
+  font-size: inherit;
+  max-height: 999em;
+}
+
+[dir=rtl] .read-more-state ~ .read-more-trigger:before {
+	content: 'قراءة المزيد \f107';
+	font-family: 'FontAwesome', lemonada;
+ 
+}
+[dir=ltr] .read-more-state ~ .read-more-trigger:before {
+	content: 'Show More \f107';
+	font-family: 'FontAwesome', lemonada;
+ 
+} 
+
+[dir=rtl] .read-more-state:checked ~ .read-more-trigger:before {
+  content: 'نبذة مختصرة \f106';
+  font-family: 'FontAwesome', lemonada;
+  
+}
+
+[dir=ltr] .read-more-state:checked ~ .read-more-trigger:before {
+  content: 'Show Less \f106';
+  font-family: 'FontAwesome', lemonada;
+  
+}
+
+.read-more-trigger {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 .5em;
+  color: #666;
+  font-size: .9em;
+  line-height: 2;
+  border: 1px solid #ddd;
+  border-radius: .25em;
+}

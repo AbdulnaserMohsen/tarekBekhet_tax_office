@@ -1,0 +1,29 @@
+
+.containers {
+  height: 10px;
+  position: relative;
+  max-width: 320px;
+  margin: auto;
+}
+.containers .imageWrapper {
+  border: 3px solid #000;
+  width: 70%;
+  padding-bottom: 70%;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.containers .imageWrapper img {
+  height: 100%;
+  width: initial;
+  max-height: 100%;
+  max-width: initial;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+

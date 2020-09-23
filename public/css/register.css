@@ -1,0 +1,460 @@
+
+
+
+
+/*---------------------------------------------*/
+input {
+	outline: none;
+	border: none;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+textarea {
+  outline: none;
+  border: none;
+}
+
+textarea:focus, input:focus {
+  border-color: transparent !important;
+}
+
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; }
+input:focus::-moz-placeholder { color:transparent; }
+input:focus:-ms-input-placeholder { color:transparent; }
+
+textarea:focus::-webkit-input-placeholder { color:transparent; }
+textarea:focus:-moz-placeholder { color:transparent; }
+textarea:focus::-moz-placeholder { color:transparent; }
+textarea:focus:-ms-input-placeholder { color:transparent; }
+
+input::-webkit-input-placeholder {color: #cccccc;}
+input:-moz-placeholder {color: #cccccc;}
+input::-moz-placeholder {color: #cccccc;}
+input:-ms-input-placeholder {color: #cccccc;}
+
+textarea::-webkit-input-placeholder {color: #cccccc;}
+textarea:-moz-placeholder {color: #cccccc;}
+textarea::-moz-placeholder {color: #cccccc;}
+textarea:-ms-input-placeholder {color: #cccccc;}
+
+
+
+/*//////////////////////////////////////////////////////////////////
+[ login ]*/
+.limiter {
+  width: 80%;
+  margin: 0 auto;
+  height: 10%;
+}
+
+.container-login100 {
+  width: 100%;  
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+
+.wrap-login100 {
+  width: 100%;
+  min-height: 100vh;
+  background: #fff;
+  border-radius: 2px;
+  position: relative;
+}
+
+/*==================================================================
+[ Form ]*/
+
+.login100-form {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+
+
+/*------------------------------------------------------------------
+[ Input ]*/
+
+.wrap-input100 {
+  width: 100%;
+  position: relative;
+  border-bottom: 2px solid #dbdbdb;
+  margin-bottom: 45px;
+}
+
+.label-input100 {
+  font-family: Poppins-SemiBold;
+  font-size: 18px;
+  color: #5555555;
+  line-height: 1.2;
+  padding-left: 2px;
+}
+
+.input100 {
+  display: block;
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  font-family: Poppins-Regular;
+  font-size: 22px;
+  color: #555555;
+  line-height: 1.2;
+  padding: 0 2px;
+}
+
+.input-not-required{
+	display: block;
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  font-family: Poppins-Regular;
+  font-size: 22px;
+  color: #555555;
+  line-height: 1.2;
+  padding: 0 2px;
+} 
+
+.focus-input100 {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  pointer-events: none;
+}
+
+.focus-input100::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+
+  background: #d5007d;
+  background: -webkit-linear-gradient(45deg, #d5007d, #e53935);
+  background: -o-linear-gradient(45deg, #d5007d, #e53935);
+  background: -moz-linear-gradient(45deg, #d5007d, #e53935);
+  background: linear-gradient(45deg, #d5007d, #e53935);
+}
+
+
+.input100:focus + .focus-input100::before {
+  width: 100%;
+}
+
+.input-not-required:focus + .focus-input100::before {
+  width: 100%;
+}
+
+
+.has-invalid.input100 + .focus-input100::before {
+	  background: #d5007d;
+  background: -webkit-linear-gradient(45deg, #d5007d, #e53935);
+  background: -o-linear-gradient(45deg, #d5007d, #e53935);
+  background: -moz-linear-gradient(45deg, #d5007d, #e53935);
+  background: linear-gradient(45deg, #d5007d, #e53935);
+  width: 100%;
+}
+
+.has-invalid.input-not-required + .focus-input100::before {
+	  background: #d5007d;
+  background: -webkit-linear-gradient(45deg, #d5007d, #e53935);
+  background: -o-linear-gradient(45deg, #d5007d, #e53935);
+  background: -moz-linear-gradient(45deg, #d5007d, #e53935);
+  background: linear-gradient(45deg, #d5007d, #e53935);
+  width: 100%;
+}
+
+
+.has-valid.input100 + .focus-input100::before {
+	background:green;
+  width: 100%;
+}
+.has-valid.input-not-required + .focus-input100::before {
+	background:green;
+  width: 100%;
+}
+
+
+
+
+
+
+/*------------------------------------------------------------------
+[ Button ]*/
+
+.registerButton{
+	
+
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: var(--main-color);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  margin:10px;
+}
+
+.registerButton:hover  {
+	background-color: var(--second-color);
+}
+.registerButton:focus  {
+	background-color: var(--second-color);
+}
+
+
+.registerButton:active{
+	
+  background-color: var(--second-color);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.registerButton i{
+	color: #fff;
+}
+
+.registerButton:hover  {
+	background-color: var(--second-color);
+}
+.registerButton:focus  {
+	background-color: var(--second-color);
+}
+
+
+.registerButton:active{
+	
+  background-color: var(--second-color);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.registerButton i{
+	color: #fff;
+}
+
+.deleteButton{
+	display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #D10024;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  margin:10px;
+	
+}
+.deleteButton:hover  {
+	background-color: red;
+}
+.deleteButton:focus  {
+	background-color: red;
+}
+
+.deleteButton:active{
+	
+  background-color: red;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.deleteButton:disabled,
+.deleteButton[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+  box-shadow: 0 1px #666;
+}
+
+.deleteButton i{
+	color: #fff;
+}
+.container-login100-form-btn {
+	width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.wrap-login100-form-btn {
+	
+  display: block;
+  position: relative;
+  z-index: 1;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.login100-form-btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100%;
+  height: 100%;
+
+  font-family: Poppins-Medium;
+  font-size: 30px;
+  color: #fff;
+  line-height: 1.2;
+}
+
+.wrap-login100-form-btn:hover .login100-form-bgbtn {
+  bottom: 0;
+}
+
+
+/*------------------------------------------------------------------
+[ Alert validate ]*/
+
+.validate-input {
+  position: relative;
+}
+
+.alert-validate::before {
+  content: attr(data-validate);
+  position: absolute;
+  max-width: 70%;
+  background-color: #fff;
+  border: 1px solid #c80000;
+  border-radius: 2px;
+  padding: 4px 25px 4px 25px;
+  bottom: calc((100% - 25px) / 2);
+  -webkit-transform: translateY(50%);
+  -moz-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  -o-transform: translateY(50%);
+  transform: translateY(50%);
+  pointer-events: none;
+
+  font-family: Poppins-Medium;
+  color: #c80000;
+  font-size: 14px;
+  line-height: 1.4;
+  text-align: center;
+
+  visibility: hidden;
+  opacity: 0;
+
+  -webkit-transition: opacity 0.4s;
+  -o-transition: opacity 0.4s;
+  -moz-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+}
+[dir=ltr] .alert-validate::before{ right: 0;}
+[dir=rtl] .alert-validate::before{ left: 0;}
+
+.alert-validate::after {
+  content: "\f06a";
+  font-family: FontAwesome;
+  display: block;
+  position: absolute;
+  color: #c80000;
+  font-size: 18px;
+  bottom: calc((100% - 25px) / 2);
+  -webkit-transform: translateY(50%);
+  -moz-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  -o-transform: translateY(50%);
+  transform: translateY(50%);
+}
+[dir=ltr] .alert-validate::after{right: 5px;}
+[dir=rtl] .alert-validate::after{left: 5px;}
+
+.alert-validate:hover:before {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media (max-width: 992px) {
+  .alert-validate::before {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.true-validate::after {
+  content: "\f058";
+  font-family: FontAwesome;
+  font-size: 22px;
+  color: #00ad5f;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: calc((100% - 25px) / 2);
+  -webkit-transform: translateY(50%);
+  -moz-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  -o-transform: translateY(50%);
+  transform: translateY(50%);
+}
+[dir=ltr] .true-validate::after{right: 5px;}
+[dir=rtl] .true-validate::after{left: 5px;}
+
+/*//////////////////////////////////////////////////////////////////
+[ Responsive ]*/
+
+@media (max-width: 576px) {
+  .wrap-login100 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+
+
